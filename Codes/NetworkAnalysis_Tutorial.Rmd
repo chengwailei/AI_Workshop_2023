@@ -1,0 +1,368 @@
+---
+title: "Network Analysis Tutorial"
+author: "Winnie Lei"
+date: "2023-10-16"
+output: rmdformats::material
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# 1. Setting up environment
+
+# 1.1 Set working directory
+```{r Set your working directory}
+setwd("C:/Users/leich/Dropbox (Cambridge University)/LabRetreat_Han2023")
+```
+
+
+# 1.2 Load required libraries. 
+(You should have these libraries installed before the workshop session. If not, please ask for help)
+igraph:
+dplyr:
+Remotes:
+```{r Load required libraries}
+# igraph for network analysis
+library(igraph)
+
+# dplyr for manipulating data table
+library(dplyr)
+
+# data.table for reading data
+library(data.table)
+```
+# 2. Read in dataset
+
+# 2.1 MalaCard CML dataset from GitHub
+```{r Read in key genes from Malacard}
+CMLfile = "https://raw.githubusercontent.com/chengwailei/YUHS_NetworkAnalysis/main/data/CML_MalaCard_Gene.csv"
+
+CML_keygenes_df = read.csv(CMLfile)
+
+rmarkdown::paged_table(CML_keygenes_df) ## dont run this
+# run this:
+# CML_keygenes_df
+```
+
+# 2.2 STRING interactome datset from STRING
+```{r Read in interactome data from STRING}
+STRINGfile = "https://stringdb-downloads.org/download/protein.physical.links.v12.0/9606.protein.physical.links.v12.0.txt.gz"
+
+interactome_df = fread(STRINGfile, 
+                            sep = " ",
+                            header = TRUE,)
+interactome_df = as.data.frame(interactome_df)
+
+rmarkdown::paged_table(interactome_df) ## dont run this
+# run this:
+# interactome_df
+```
+
+# 2.3 STRING protein alias dataset
+```{r Read in protein data from STRING}
+STRINGAliasFile = "https://stringdb-downloads.org/download/protein.aliases.v12.0/9606.protein.aliases.v12.0.txt.gz"
+
+alias_df = fread(STRINGAliasFile,
+                      sep = "\t",
+                      fill = TRUE)
+alias_df = as.data.frame(alias_df)
+
+colnames(alias_df) <-  c("protein_name", "alias", "source")
+
+rmarkdown::paged_table(alias_df) ## dont run this
+# run this:
+# alias_df
+```
+
+# 3. Define the gene of interests
+We are interested in protein encoding genes that are likely pathogeneic in the MalaCard geneset.
+```{r Subset gene in MalaCard dataset}
+CML_keygenes_list = CML_keygenes_df[(CML_keygenes_df$Category == "Protein Coding")&(CML_keygenes_df$Evidence=="Diseases_inferred"),]$Symbol
+CML_keygenes_list = unique(CML_keygenes_list)
+CML_keygenes_list
+```
+### ❓Time for Question 1 & 2
+
+Try and edit the code and answer quiz questions 1 and 2 on Slido.
+
+Slido.com: # 1675300
+
+We need to subset to get the Ensembl protein IDs by their gene names. 
+Note that some alias may not have a corresponding protein name. This might be due to the uses of different alias in the interactome or it is not recorded at all.
+```{r Generate protein ID from gene list}
+## choosing alias only from KEGG NAME
+alias_df_1 = alias_df[alias_df$source == "KEGG_NAME",]
+
+keygenes_Ensembl = alias_df_1[alias_df_1$alias %in% CML_keygenes_list,]
+keygenes_Ensembl_list = unique(keygenes_Ensembl$protein_name)
+```
+
+# 4.Extract subnetwork
+
+To extract the CML subnetwork, we keep interactions that involve our genes of interests.
+```{r Extract CML subnetwork}
+CML_network = interactome_df[(interactome_df$protein1 %in% keygenes_Ensembl_list) &(interactome_df$protein2 %in% keygenes_Ensembl_list), ]
+
+rmarkdown::paged_table(CML_network) ## dont run this
+# run this:
+# CML_network
+```
+
+We have the list of interactions, which is huge (4,232 interaction). They are not all relevant though. STRING provides a separate column "combined_score" which denotes how confident they are with the interaction. This reflects whether the interaction is simply predicted due to co-mentioning in literature or tested experimentally for their interaction.
+
+A middle, and widely accepted cut-off is 400. We want to aim for a higher confidence at 800. This can be done by:
+```{r Filter interaction by confidence at 800}
+CML_network = CML_network[CML_network$combined_score >= 800,]
+
+rmarkdown::paged_table(CML_network) ## dont run this
+# run this:
+# CML_network
+```
+
+## ❓Time for Question 3
+
+Try and answer quiz question 3 on Slido!
+
+Now we have a protein network but the Ensembl Protein IDs are confusing. We can add the alias name from the keygenes_Ensembl that we have generated.
+```{r Add alias names to CML network}
+CML_network = merge(CML_network,
+              keygenes_Ensembl[c("protein_name","alias")],
+              by.x = "protein1",
+              by.y = "protein_name",
+              all.x = TRUE)
+colnames(CML_network) = c("protein1", "protein2", "combined_score","protein1_alias")
+
+CML_network = merge(CML_network,
+              keygenes_Ensembl[c("protein_name","alias")],
+              by.x = "protein2",
+              by.y = "protein_name",
+              all.x = TRUE)
+colnames(CML_network) = c("protein1", "protein2", "combined_score","protein1_alias", "protein2_alias")
+
+rmarkdown::paged_table(CML_network) ## dont run this
+# run this:
+# CML_network
+```
+
+## Save network
+To ensure we can retrieve the same result in each run, saving the network would be helpful. This also helps to feed the result to other pipelines.
+```{r save network results}
+write.csv(CML_network, "CML_network.csv", row.names = FALSE)
+CML_network <- read.csv("CML_network.csv")
+
+rmarkdown::paged_table(CML_network) ## dont run this
+# run this:
+# CML_network
+```
+
+# 5. Network as network
+
+# 5.1 Converting to network
+Up until now, we are subsetting the network as a datatable (a.k.a edgelist, as the table stores the edges of the data). To run any algorithms, we will need to read it as a network. 
+The package we are using is igraph, which you should have loaded at the start of the tutorial
+
+```{r Graph edgelist to graph}
+g <- graph_from_data_frame(CML_network[c("protein1_alias","protein2_alias")], 
+                           directed = FALSE, ## indicate there are no directionality
+                           vertices = NULL) ## no additional file indicating the vertice properites
+```
+
+# 5.2 Visualise the graph
+To visualise the graph, we use the plot function 
+```{r Visualise graph, fig.wdith = 12}
+par(mar = rep(0, 4))   # reduce margins
+## adjusting layout
+plot(g, 
+     vertex.color = 'white', 
+     vertex.size = 2,
+     edge.color = rgb(0.5, 0.5, 0.5, 0.2),
+     vertex.label.cex = 0.7
+     )
+```
+The nodes are all clustered together. The best way to overcome this is to adjust the layout. 
+```{r Plot graph with adjusted layout, fig.wdith = 12}
+par(mar = rep(2, 4))   # reduce margins
+## adjusting layout
+lay <- layout_(g,
+               with_dh(weight.edge.lengths = edge_density(g)/1000))
+plot(g, 
+     vertex.color = 'white', 
+     vertex.size = 2,
+     edge.color = rgb(0.5, 0.5, 0.5, 0.2),
+     vertex.label.cex = 0.7,
+     layout=lay
+     )
+```
+
+## ❓Time for Question 4
+
+Try and answer quiz question 4 on Slido!
+
+# 6. Centrality measures
+
+In the previous lectures, we learnt about several centrality scores. The algorithms measure the topology of the network and give us some insights on the node or edge importances. In this exercise, we use the CML network and calculate some centralities we have described.
+
+# 6.1 Degree centrality
+Degree centrality measures the number of edges connected to the nodes. We use the "degree()" function from igraph to calculate the degree centrality of the CML network.
+```{r calculate degree centrality}
+degree_centrality <- degree(g, 
+                            v = V(g), 
+                            mode = "all")
+
+degree_centrality[order(degree_centrality,
+      decreasing = TRUE)]
+```
+## Visualise network by centrality scores
+We can visualise the degree centrality on the network plot itself. 
+```{r Plot network by degree centrality score}
+par(mar = rep(0, 4))   # reduce margins
+## define colour
+X = length(V(g))
+colors <- heat.colors(X, rev=T)
+
+plot(g, 
+     #layout = lay,
+      vertex.color = colors[degree(g)], 
+      vertex.size = 10,
+      vertex.label.cex = 0.5,
+      vertex.label.color = "black",
+      bg = ""
+      )
+
+```
+
+# 6.2 Closeness centrality
+Closeness centrality describe how far a node is from other nodes. We use the "closeness()" function from igraph to calculate the closeness centrality of the CML network.
+```{r calculate closeness centrality}
+closeness_centrality <- closeness(g)
+
+closeness_centrality[order(closeness_centrality,
+      decreasing = TRUE)]
+```
+We see HOXA9, and MEIS1 are jointly at the top. They are from the disconnected graph. 
+
+## ❓Time for Question 5
+
+Try and answer quiz question 5 on Slido!
+
+# 6.3 Betweenness centrality
+Betweenness centrality describe how much influence a node has in the network. We use the "betweenness()" function from igraph to calculate the Betweenness centrality of the CML network.
+
+```{r calculate betweenness centrality}
+betweenness_centrality <- betweenness(g)
+
+betweenness_centrality[order(betweenness_centrality,
+      decreasing = TRUE)]
+```
+
+## ❓Time for Question 6
+
+Try and answer quiz question 6 on Slido!
+
+# 6.4 Eigenvector centrality
+Eigenvector centrality describe how much influence a node has in the network. We use the "evcent()" function from igraph to calculate the Eigenvector centrality of the CML network.
+
+You might notice that the algorithms returns a list of list. To over come this, we need to read into the actual result, which is stored as "vector".
+```{r calculate eigenvector centrality}
+eigenvector_centrality <- evcent(g)
+eigenvector_centrality <- eigenvector_centrality$vector
+
+eigenvector_centrality[order(eigenvector_centrality,
+      decreasing = TRUE)]
+```
+
+## ❓Time for Question 7
+
+Try and answer quiz question 7 on Slido!
+
+# 6.5 Random Walk Restart/ Personalised PageRank
+We extracted the interactome from a non-disease database, therefore the edges may only be applicable to normal settings. We are interested to disease-associated interactions. One of the ways to do so is to seed RWR from dysregulated protein, in our case BCR and ABL1. (as there is no node called BCR/ABL1)
+
+## Restarting from ABL1
+```{r Create ABL1 personalisation vector}
+## Create a vector of importance
+ABL1_PPR_vector = ifelse(V(g)$name == "ABL1", 1, 0)
+ABL1_PPR_vector
+```
+
+```{r Calculate personalised pagerank from ABL1}
+ABL1_PPR <- page_rank(g,
+                      personalized = ABL1_PPR_vector)
+ABL1_PPR = ABL1_PPR$vector
+
+ABL1_PPR[order(ABL1_PPR,
+      decreasing = TRUE)]
+```
+
+## Repeat the same analysis for BCR
+
+What would the codes be for starting at "BCR" instead of "ABL1"?
+
+## ❓Time for Question 8
+
+Try and answer quiz question 8 on Slido!
+
+## Repeat the same analysis for BCR and ABL1
+```{r Calculate personalised pagerank from BCR and ABL1}
+## Create a vector of importance
+CML_PPR_vector = ifelse(V(g)$name %in% c("BCR","ABL1"), 1, 0)
+
+CML_PPR <- page_rank(g,
+                      personalized = CML_PPR_vector)
+CML_PPR = CML_PPR$vector
+
+CML_PPR[order(CML_PPR,
+      decreasing = TRUE)]
+```
+
+## ❓Time for Question 9
+
+Try and answer quiz question 9 on Slido!
+
+# 7. Summarise all centrality scores and RWR results
+```{r Define new dataframe containing all results}
+ppr <- as.data.frame(CML_PPR)
+centrality_result <- cbind(ppr, 
+             degree_centrality, 
+             eigenvector_centrality, 
+             closeness_centrality,
+             betweenness_centrality)
+
+rmarkdown::paged_table(centrality_result) ## dont run this
+# run this:
+# centrality_result
+```
+
+```{r Caculate average per row}
+centrality_average = rowMeans(centrality_result)
+centrality_average[order(centrality_average,
+      decreasing = TRUE)]
+```
+
+## ❓Time for Question 10
+
+Try and answer quiz question 10 on Slido!
+
+# 8. GeneCard
+https://www.genecards.org/cgi-bin/carddisp.pl?gene=HSP90AA1&keywords=HSP90AA1
+
+## ❓Time for Question 11
+
+Try and answer quiz question 11 on Slido!
+
+# 9. DrugBank
+https://go.drugbank.com/bio_entities/BE0001120
+
+## ❓Time for Question 12
+
+Try and answer quiz question 12 on Slido!
+
+
+# SessionInfo
+```{r Session Info}
+sessionInfo()
+```
+
+
+
