@@ -27,7 +27,7 @@ import matplotlib as mpl
 *2.1 MalaCard CML dataset from GitHub*
 """
 
-CMLfile="https://raw.githubusercontent.com/chengwailei/YUHS_NetworkAnalysis/main/data/CML_MalaCard_Gene.csv"
+CMLfile="https://raw.githubusercontent.com/chengwailei/AI_Workshop_2023/main/NetworkAnalysis_081123/Data/CML_MalaCard_Gene.csv"
 
 CML_keygenes_df=pd.read_csv(CMLfile)
 
