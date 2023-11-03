@@ -1,0 +1,418 @@
+Symbol,Description,Category,Score,Evidence
+ABL1,"ABL Proto-Oncogene 1, Non-Receptor Tyrosine Kinase",Protein Coding,1306.92,Molecular_basis_known
+ABL1,"ABL Proto-Oncogene 1, Non-Receptor Tyrosine Kinase",Protein Coding,1306.92,Pathogenic
+ABL1,"ABL Proto-Oncogene 1, Non-Receptor Tyrosine Kinase",Protein Coding,1306.92,Gene_fusion
+ABL1,"ABL Proto-Oncogene 1, Non-Receptor Tyrosine Kinase",Protein Coding,1306.92,Likely_pathogenic
+ABL1,"ABL Proto-Oncogene 1, Non-Receptor Tyrosine Kinase",Protein Coding,1306.92,Diseases_inferred
+ABL1,"ABL Proto-Oncogene 1, Non-Receptor Tyrosine Kinase",Protein Coding,1306.92,Novoseek_inferred
+ABL1,"ABL Proto-Oncogene 1, Non-Receptor Tyrosine Kinase",Protein Coding,1306.92,GeneCards_inferred
+BCR,BCR Activator Of RhoGEF And GTPase,Protein Coding,880.05,Structural_variation
+BCR,BCR Activator Of RhoGEF And GTPase,Protein Coding,880.05,Gene_fusion
+BCR,BCR Activator Of RhoGEF And GTPase,Protein Coding,880.05,Diseases_inferred
+BCR,BCR Activator Of RhoGEF And GTPase,Protein Coding,880.05,Novoseek_inferred
+BCR,BCR Activator Of RhoGEF And GTPase,Protein Coding,880.05,GeneCards_inferred
+NRAS,"NRAS Proto-Oncogene, GTPase",Protein Coding,437.02,Pathogenic
+NRAS,"NRAS Proto-Oncogene, GTPase",Protein Coding,437.02,Likely_pathogenic
+NRAS,"NRAS Proto-Oncogene, GTPase",Protein Coding,437.02,Diseases_inferred
+NRAS,"NRAS Proto-Oncogene, GTPase",Protein Coding,437.02,Novoseek_inferred
+KRAS,"KRAS Proto-Oncogene, GTPase",Protein Coding,409.4,Pathogenic
+KRAS,"KRAS Proto-Oncogene, GTPase",Protein Coding,409.4,Diseases_inferred
+KRAS,"KRAS Proto-Oncogene, GTPase",Protein Coding,409.4,Novoseek_inferred
+SF3B1,Splicing Factor 3b Subunit 1,Protein Coding,404.37,Pathogenic
+SF3B1,Splicing Factor 3b Subunit 1,Protein Coding,404.37,Diseases_inferred
+MIR17,MicroRNA 17,RNA Gene,359.67,Causal
+MIR17,MicroRNA 17,RNA Gene,359.67,Diseases_inferred
+MIR20A,MicroRNA 20a,RNA Gene,358.19,Causal
+MIR20A,MicroRNA 20a,RNA Gene,358.19,Diseases_inferred
+MIR10A,MicroRNA 10a,RNA Gene,355.26,Causal
+MIR10A,MicroRNA 10a,RNA Gene,355.26,Diseases_inferred
+MIR223,MicroRNA 223,RNA Gene,355.19,Causal
+MIR223,MicroRNA 223,RNA Gene,355.19,Diseases_inferred
+MIR203A,MicroRNA 203a,RNA Gene,353.53,Causal
+MIR203A,MicroRNA 203a,RNA Gene,353.53,Diseases_inferred
+SETBP1,SET Binding Protein 1,Protein Coding,314.7,Causative_variation
+SETBP1,SET Binding Protein 1,Protein Coding,314.7,Diseases_inferred
+SETBP1,SET Binding Protein 1,Protein Coding,314.7,GeneCards_inferred
+RUNX1,RUNX Family Transcription Factor 1,Protein Coding,39.53,Orphanet
+RUNX1,RUNX Family Transcription Factor 1,Protein Coding,39.53,Diseases_inferred
+RUNX1,RUNX Family Transcription Factor 1,Protein Coding,39.53,Novoseek_inferred
+BGLT3,Beta Globin Locus Transcript 3,RNA Gene,155.52,Experimental_evidence_Regulation
+BGLT3,Beta Globin Locus Transcript 3,RNA Gene,155.52,Diseases_inferred
+HOTAIR,HOX Transcript Antisense RNA,RNA Gene,154.77,Experimental_evidence_Regulation
+HOTAIR,HOX Transcript Antisense RNA,RNA Gene,154.77,Diseases_inferred
+UCA1,Urothelial Cancer Associated 1,RNA Gene,154.58,Experimental_evidence_Expression
+UCA1,Urothelial Cancer Associated 1,RNA Gene,154.58,Diseases_inferred
+MEG3,Maternally Expressed 3,RNA Gene,153.13,Experimental_evidence_Regulation
+MEG3,Maternally Expressed 3,RNA Gene,153.13,Diseases_inferred
+H19,H19 Imprinted Maternally Expressed Transcript,RNA Gene,152.04,Experimental_evidence_Regulation
+H19,H19 Imprinted Maternally Expressed Transcript,RNA Gene,152.04,Novoseek_inferred
+HULC,Hepatocellular Carcinoma Up-Regulated Long Non-Coding RNA,RNA Gene,150,Experimental_evidence_Expression
+CSF3R,Colony Stimulating Factor 3 Receptor,Protein Coding,36.52,Likely_pathogenic
+CSF3R,Colony Stimulating Factor 3 Receptor,Protein Coding,36.52,Diseases_inferred
+CSF3R,Colony Stimulating Factor 3 Receptor,Protein Coding,36.52,Novoseek_inferred
+BRAF,"B-Raf Proto-Oncogene, Serine/Threonine Kinase",Protein Coding,30.4,Likely_pathogenic
+BRAF,"B-Raf Proto-Oncogene, Serine/Threonine Kinase",Protein Coding,30.4,Diseases_inferred
+IFNA1,Interferon Alpha 1,Protein Coding,18.09,Diseases_inferred
+IFNA1,Interferon Alpha 1,Protein Coding,18.09,Novoseek_inferred
+KIT,"KIT Proto-Oncogene, Receptor Tyrosine Kinase",Protein Coding,18.06,Diseases_inferred
+KIT,"KIT Proto-Oncogene, Receptor Tyrosine Kinase",Protein Coding,18.06,Novoseek_inferred
+CRKL,"CRK Like Proto-Oncogene, Adaptor Protein",Protein Coding,17.52,Diseases_inferred
+CRKL,"CRK Like Proto-Oncogene, Adaptor Protein",Protein Coding,17.52,Novoseek_inferred
+JAK2,Janus Kinase 2,Protein Coding,16.79,Diseases_inferred
+JAK2,Janus Kinase 2,Protein Coding,16.79,Novoseek_inferred
+PDGFRB,Platelet Derived Growth Factor Receptor Beta,Protein Coding,16.19,Diseases_inferred
+PDGFRB,Platelet Derived Growth Factor Receptor Beta,Protein Coding,16.19,Novoseek_inferred
+IL3,Interleukin 3,Protein Coding,16.16,Diseases_inferred
+IL3,Interleukin 3,Protein Coding,16.16,Novoseek_inferred
+STAT5A,Signal Transducer And Activator Of Transcription 5A,Protein Coding,16.02,Diseases_inferred
+STAT5A,Signal Transducer And Activator Of Transcription 5A,Protein Coding,16.02,Novoseek_inferred
+CSF3,Colony Stimulating Factor 3,Protein Coding,15.96,Diseases_inferred
+CSF3,Colony Stimulating Factor 3,Protein Coding,15.96,Novoseek_inferred
+FLT3,Fms Related Receptor Tyrosine Kinase 3,Protein Coding,15.94,Diseases_inferred
+FLT3,Fms Related Receptor Tyrosine Kinase 3,Protein Coding,15.94,Novoseek_inferred
+CD34,CD34 Molecule,Protein Coding,15.57,Diseases_inferred
+CD34,CD34 Molecule,Protein Coding,15.57,Novoseek_inferred
+LYN,"LYN Proto-Oncogene, Src Family Tyrosine Kinase",Protein Coding,15.17,Diseases_inferred
+LYN,"LYN Proto-Oncogene, Src Family Tyrosine Kinase",Protein Coding,15.17,Novoseek_inferred
+CSF2,Colony Stimulating Factor 2,Protein Coding,15.02,Diseases_inferred
+CSF2,Colony Stimulating Factor 2,Protein Coding,15.02,Novoseek_inferred
+KITLG,KIT Ligand,Protein Coding,14.89,Diseases_inferred
+KITLG,KIT Ligand,Protein Coding,14.89,Novoseek_inferred
+IRF8,Interferon Regulatory Factor 8,Protein Coding,14.88,Diseases_inferred
+IRF8,Interferon Regulatory Factor 8,Protein Coding,14.88,Novoseek_inferred
+PDGFRA,Platelet Derived Growth Factor Receptor Alpha,Protein Coding,14.81,Diseases_inferred
+PDGFRA,Platelet Derived Growth Factor Receptor Alpha,Protein Coding,14.81,Novoseek_inferred
+WT1,WT1 Transcription Factor,Protein Coding,14.57,Diseases_inferred
+WT1,WT1 Transcription Factor,Protein Coding,14.57,Novoseek_inferred
+IFNA2,Interferon Alpha 2,Protein Coding,14.46,Diseases_inferred
+IFNA2,Interferon Alpha 2,Protein Coding,14.46,Novoseek_inferred
+SRC,"SRC Proto-Oncogene, Non-Receptor Tyrosine Kinase",Protein Coding,14.33,Diseases_inferred
+SRC,"SRC Proto-Oncogene, Non-Receptor Tyrosine Kinase",Protein Coding,14.33,Novoseek_inferred
+SLC22A1,Solute Carrier Family 22 Member 1,Protein Coding,14.18,Diseases_inferred
+SLC22A1,Solute Carrier Family 22 Member 1,Protein Coding,14.18,Novoseek_inferred
+HCK,"HCK Proto-Oncogene, Src Family Tyrosine Kinase",Protein Coding,14.16,Diseases_inferred
+HCK,"HCK Proto-Oncogene, Src Family Tyrosine Kinase",Protein Coding,14.16,Novoseek_inferred
+MCL1,"MCL1 Apoptosis Regulator, BCL2 Family Member",Protein Coding,14.06,Diseases_inferred
+MCL1,"MCL1 Apoptosis Regulator, BCL2 Family Member",Protein Coding,14.06,Novoseek_inferred
+ETV6,ETS Variant Transcription Factor 6,Protein Coding,13.93,Diseases_inferred
+ETV6,ETS Variant Transcription Factor 6,Protein Coding,13.93,Novoseek_inferred
+MYC,"MYC Proto-Oncogene, BHLH Transcription Factor",Protein Coding,13.77,Diseases_inferred
+MYC,"MYC Proto-Oncogene, BHLH Transcription Factor",Protein Coding,13.77,Novoseek_inferred
+ABCB1,ATP Binding Cassette Subfamily B Member 1,Protein Coding,13.74,Diseases_inferred
+ABCB1,ATP Binding Cassette Subfamily B Member 1,Protein Coding,13.74,Novoseek_inferred
+CASP3,Caspase 3,Protein Coding,13.67,Diseases_inferred
+CASP3,Caspase 3,Protein Coding,13.67,Novoseek_inferred
+BCL2,BCL2 Apoptosis Regulator,Protein Coding,13.6,Diseases_inferred
+BCL2,BCL2 Apoptosis Regulator,Protein Coding,13.6,Novoseek_inferred
+BCL2L1,BCL2 Like 1,Protein Coding,13.59,Diseases_inferred
+BCL2L1,BCL2 Like 1,Protein Coding,13.59,Novoseek_inferred
+NUP98,Nucleoporin 98 And 96 Precursor,Protein Coding,13.36,Diseases_inferred
+NUP98,Nucleoporin 98 And 96 Precursor,Protein Coding,13.36,Novoseek_inferred
+CD33,CD33 Molecule,Protein Coding,13.27,Diseases_inferred
+CD33,CD33 Molecule,Protein Coding,13.27,Novoseek_inferred
+MPL,"MPL Proto-Oncogene, Thrombopoietin Receptor",Protein Coding,13.22,Diseases_inferred
+MPL,"MPL Proto-Oncogene, Thrombopoietin Receptor",Protein Coding,13.22,Novoseek_inferred
+PRAME,PRAME Nuclear Receptor Transcriptional Regulator,Protein Coding,13.22,Diseases_inferred
+PRAME,PRAME Nuclear Receptor Transcriptional Regulator,Protein Coding,13.22,Novoseek_inferred
+DNTT,DNA Nucleotidylexotransferase,Protein Coding,13.09,Diseases_inferred
+DNTT,DNA Nucleotidylexotransferase,Protein Coding,13.09,Novoseek_inferred
+STAT5B,Signal Transducer And Activator Of Transcription 5B,Protein Coding,12.78,Diseases_inferred
+STAT5B,Signal Transducer And Activator Of Transcription 5B,Protein Coding,12.78,Novoseek_inferred
+ANXA5,Annexin A5,Protein Coding,12.56,Diseases_inferred
+ANXA5,Annexin A5,Protein Coding,12.56,Novoseek_inferred
+DOK1,Docking Protein 1,Protein Coding,12.5,Diseases_inferred
+DOK1,Docking Protein 1,Protein Coding,12.5,Novoseek_inferred
+GATA2,GATA Binding Protein 2,Protein Coding,12.46,Diseases_inferred
+GATA2,GATA Binding Protein 2,Protein Coding,12.46,Novoseek_inferred
+GRB2,Growth Factor Receptor Bound Protein 2,Protein Coding,12.43,Diseases_inferred
+GRB2,Growth Factor Receptor Bound Protein 2,Protein Coding,12.43,Novoseek_inferred
+MECOM,MDS1 And EVI1 Complex Locus,Protein Coding,12.4,Diseases_inferred
+MECOM,MDS1 And EVI1 Complex Locus,Protein Coding,12.4,Novoseek_inferred
+HSP90AA1,Heat Shock Protein 90 Alpha Family Class A Member 1,Protein Coding,12.39,Diseases_inferred
+HSP90AA1,Heat Shock Protein 90 Alpha Family Class A Member 1,Protein Coding,12.39,Novoseek_inferred
+HRAS,"HRas Proto-Oncogene, GTPase",Protein Coding,12.37,Diseases_inferred
+HRAS,"HRas Proto-Oncogene, GTPase",Protein Coding,12.37,Novoseek_inferred
+PRTN3,Proteinase 3,Protein Coding,12.23,Diseases_inferred
+PRTN3,Proteinase 3,Protein Coding,12.23,Novoseek_inferred
+MYB,"MYB Proto-Oncogene, Transcription Factor",Protein Coding,12.2,Diseases_inferred
+MYB,"MYB Proto-Oncogene, Transcription Factor",Protein Coding,12.2,Novoseek_inferred
+THPO,Thrombopoietin,Protein Coding,12.18,Diseases_inferred
+THPO,Thrombopoietin,Protein Coding,12.18,Novoseek_inferred
+HOXA9,Homeobox A9,Protein Coding,12.03,Diseases_inferred
+HOXA9,Homeobox A9,Protein Coding,12.03,Novoseek_inferred
+GAB2,GRB2 Associated Binding Protein 2,Protein Coding,11.86,Diseases_inferred
+GAB2,GRB2 Associated Binding Protein 2,Protein Coding,11.86,Novoseek_inferred
+AXL,AXL Receptor Tyrosine Kinase,Protein Coding,11.83,Diseases_inferred
+AXL,AXL Receptor Tyrosine Kinase,Protein Coding,11.83,Novoseek_inferred
+U2AF1,U2 Small Nuclear RNA Auxiliary Factor 1,Protein Coding,11.74,Diseases_inferred
+PTK2B,Protein Tyrosine Kinase 2 Beta,Protein Coding,11.71,Diseases_inferred
+PTK2B,Protein Tyrosine Kinase 2 Beta,Protein Coding,11.71,Novoseek_inferred
+EPO,Erythropoietin,Protein Coding,11.71,Diseases_inferred
+EPO,Erythropoietin,Protein Coding,11.71,Novoseek_inferred
+CASP9,Caspase 9,Protein Coding,11.57,Diseases_inferred
+CASP9,Caspase 9,Protein Coding,11.57,Novoseek_inferred
+FGFR1,Fibroblast Growth Factor Receptor 1,Protein Coding,11.45,Diseases_inferred
+FGFR1,Fibroblast Growth Factor Receptor 1,Protein Coding,11.45,Novoseek_inferred
+GATA1,GATA Binding Protein 1,Protein Coding,11.13,Diseases_inferred
+GATA1,GATA Binding Protein 1,Protein Coding,11.13,Diseases_inferred
+CD177,CD177 Molecule,Protein Coding,11.07,Diseases_inferred
+CD177,CD177 Molecule,Protein Coding,11.07,Novoseek_inferred
+TKT,Transketolase,Protein Coding,11.07,Diseases_inferred
+TKT,Transketolase,Protein Coding,11.07,Novoseek_inferred
+MPO,Myeloperoxidase,Protein Coding,11.06,Diseases_inferred
+MPO,Myeloperoxidase,Protein Coding,11.06,Novoseek_inferred
+PCBP2,Poly(RC) Binding Protein 2,Protein Coding,11.05,Diseases_inferred
+PCBP2,Poly(RC) Binding Protein 2,Protein Coding,11.05,Novoseek_inferred
+CBL,Cbl Proto-Oncogene,Protein Coding,10.83,Diseases_inferred
+CBL,Cbl Proto-Oncogene,Protein Coding,10.83,Novoseek_inferred
+BACH2,BTB Domain And CNC Homolog 2,Protein Coding,10.78,Diseases_inferred
+BACH2,BTB Domain And CNC Homolog 2,Protein Coding,10.78,Novoseek_inferred
+STAT1,Signal Transducer And Activator Of Transcription 1,Protein Coding,10.65,Diseases_inferred
+STAT1,Signal Transducer And Activator Of Transcription 1,Protein Coding,10.65,Novoseek_inferred
+BIRC5,Baculoviral IAP Repeat Containing 5,Protein Coding,10.48,Diseases_inferred
+BIRC5,Baculoviral IAP Repeat Containing 5,Protein Coding,10.48,Novoseek_inferred
+ABCC1,ATP Binding Cassette Subfamily C Member 1,Protein Coding,10.47,Diseases_inferred
+ABCC1,ATP Binding Cassette Subfamily C Member 1,Protein Coding,10.47,Novoseek_inferred
+NKG7,Natural Killer Cell Granule Protein 7,Protein Coding,10.42,Diseases_inferred
+NKG7,Natural Killer Cell Granule Protein 7,Protein Coding,10.42,Novoseek_inferred
+RASA1,RAS P21 Protein Activator 1,Protein Coding,10.39,Diseases_inferred
+RASA1,RAS P21 Protein Activator 1,Protein Coding,10.39,Novoseek_inferred
+IKZF1,IKAROS Family Zinc Finger 1,Protein Coding,10.39,Diseases_inferred
+IKZF1,IKAROS Family Zinc Finger 1,Protein Coding,10.39,Novoseek_inferred
+RARA,Retinoic Acid Receptor Alpha,Protein Coding,10.38,Diseases_inferred
+RARA,Retinoic Acid Receptor Alpha,Protein Coding,10.38,Novoseek_inferred
+CDKN1A,Cyclin Dependent Kinase Inhibitor 1A,Protein Coding,10.34,Diseases_inferred
+CDKN1A,Cyclin Dependent Kinase Inhibitor 1A,Protein Coding,10.34,Novoseek_inferred
+DNMT1,DNA Methyltransferase 1,Protein Coding,10.3,Diseases_inferred
+DNMT1,DNA Methyltransferase 1,Protein Coding,10.3,Novoseek_inferred
+CDKN2B,Cyclin Dependent Kinase Inhibitor 2B,Protein Coding,10.25,Diseases_inferred
+CDKN2B,Cyclin Dependent Kinase Inhibitor 2B,Protein Coding,10.25,Novoseek_inferred
+MEIS1,Meis Homeobox 1,Protein Coding,10.24,Diseases_inferred
+MEIS1,Meis Homeobox 1,Protein Coding,10.24,Novoseek_inferred
+KMT2A,Lysine Methyltransferase 2A,Protein Coding,10.16,Diseases_inferred
+KMT2A,Lysine Methyltransferase 2A,Protein Coding,10.16,Novoseek_inferred
+KIR3DL1,"Killer Cell Immunoglobulin Like Receptor, Three Ig Domains And Long Cytoplasmic Tail 1",Protein Coding,10.12,Diseases_inferred
+KIR3DL1,"Killer Cell Immunoglobulin Like Receptor, Three Ig Domains And Long Cytoplasmic Tail 1",Protein Coding,10.12,Novoseek_inferred
+FOXO3,Forkhead Box O3,Protein Coding,10.02,Diseases_inferred
+FOXO3,Forkhead Box O3,Protein Coding,10.02,Novoseek_inferred
+CEACAM8,CEA Cell Adhesion Molecule 8,Protein Coding,10.01,Diseases_inferred
+CEACAM8,CEA Cell Adhesion Molecule 8,Protein Coding,10.01,Novoseek_inferred
+EIF4EBP1,Eukaryotic Translation Initiation Factor 4E Binding Protein 1,Protein Coding,9.83,Diseases_inferred
+EIF4EBP1,Eukaryotic Translation Initiation Factor 4E Binding Protein 1,Protein Coding,9.83,Novoseek_inferred
+NTRK3,Neurotrophic Receptor Tyrosine Kinase 3,Protein Coding,9.82,Diseases_inferred
+NTRK3,Neurotrophic Receptor Tyrosine Kinase 3,Protein Coding,9.82,Novoseek_inferred
+PIK3CG,"Phosphatidylinositol-4,5-Bisphosphate 3-Kinase Catalytic Subunit Gamma",Protein Coding,9.82,Diseases_inferred
+PIK3CG,"Phosphatidylinositol-4,5-Bisphosphate 3-Kinase Catalytic Subunit Gamma",Protein Coding,9.82,Novoseek_inferred
+SIPA1,Signal-Induced Proliferation-Associated 1,Protein Coding,9.8,Diseases_inferred
+SIPA1,Signal-Induced Proliferation-Associated 1,Protein Coding,9.8,Novoseek_inferred
+HSPA4,Heat Shock Protein Family A (Hsp70) Member 4,Protein Coding,9.64,Diseases_inferred
+HSPA4,Heat Shock Protein Family A (Hsp70) Member 4,Protein Coding,9.64,Novoseek_inferred
+SOCS1,Suppressor Of Cytokine Signaling 1,Protein Coding,9.62,Diseases_inferred
+SOCS1,Suppressor Of Cytokine Signaling 1,Protein Coding,9.62,Novoseek_inferred
+CRK,"CRK Proto-Oncogene, Adaptor Protein",Protein Coding,9.61,Diseases_inferred
+CRK,"CRK Proto-Oncogene, Adaptor Protein",Protein Coding,9.61,Novoseek_inferred
+BMI1,"BMI1 Proto-Oncogene, Polycomb Ring Finger",Protein Coding,9.49,Diseases_inferred
+BMI1,"BMI1 Proto-Oncogene, Polycomb Ring Finger",Protein Coding,9.49,Novoseek_inferred
+CCND2,Cyclin D2,Protein Coding,9.47,Diseases_inferred
+CCND2,Cyclin D2,Protein Coding,9.47,Novoseek_inferred
+H2AC18,H2A Clustered Histone 18,Protein Coding,9.44,Diseases_inferred
+TCN1,Transcobalamin 1,Protein Coding,9.44,Diseases_inferred
+TCN1,Transcobalamin 1,Protein Coding,9.44,Novoseek_inferred
+MAPK8,Mitogen-Activated Protein Kinase 8,Protein Coding,9.43,Diseases_inferred
+MAPK8,Mitogen-Activated Protein Kinase 8,Protein Coding,9.43,Novoseek_inferred
+GAPDH,Glyceraldehyde-3-Phosphate Dehydrogenase,Protein Coding,9.41,Diseases_inferred
+GAPDH,Glyceraldehyde-3-Phosphate Dehydrogenase,Protein Coding,9.41,Novoseek_inferred
+CDK2,Cyclin Dependent Kinase 2,Protein Coding,9.3,Diseases_inferred
+CDK2,Cyclin Dependent Kinase 2,Protein Coding,9.3,Novoseek_inferred
+JUNB,"JunB Proto-Oncogene, AP-1 Transcription Factor Subunit",Protein Coding,9.29,Diseases_inferred
+JUNB,"JunB Proto-Oncogene, AP-1 Transcription Factor Subunit",Protein Coding,9.29,Novoseek_inferred
+MAPK9,Mitogen-Activated Protein Kinase 9,Protein Coding,9.26,Diseases_inferred
+MAPK9,Mitogen-Activated Protein Kinase 9,Protein Coding,9.26,Novoseek_inferred
+MAPK1,Mitogen-Activated Protein Kinase 1,Protein Coding,9.25,Diseases_inferred
+MAPK1,Mitogen-Activated Protein Kinase 1,Protein Coding,9.25,Novoseek_inferred
+FCGR3B,Fc Gamma Receptor IIIb,Protein Coding,9.21,Diseases_inferred
+FCGR3B,Fc Gamma Receptor IIIb,Protein Coding,9.21,Novoseek_inferred
+PTPN11,Protein Tyrosine Phosphatase Non-Receptor Type 11,Protein Coding,9.13,Diseases_inferred
+PTPN11,Protein Tyrosine Phosphatase Non-Receptor Type 11,Protein Coding,9.13,Novoseek_inferred
+NF1,Neurofibromin 1,Protein Coding,9.1,Diseases_inferred
+NF1,Neurofibromin 1,Protein Coding,9.1,Novoseek_inferred
+PXN,Paxillin,Protein Coding,9.09,Diseases_inferred
+PXN,Paxillin,Protein Coding,9.09,Novoseek_inferred
+HDAC9,Histone Deacetylase 9,Protein Coding,9.05,Diseases_inferred
+HDAC9,Histone Deacetylase 9,Protein Coding,9.05,Novoseek_inferred
+FN1,Fibronectin 1,Protein Coding,9.04,Diseases_inferred
+FN1,Fibronectin 1,Protein Coding,9.04,Novoseek_inferred
+CSF2RA,Colony Stimulating Factor 2 Receptor Subunit Alpha,Protein Coding,9.04,Diseases_inferred
+CSF2RA,Colony Stimulating Factor 2 Receptor Subunit Alpha,Protein Coding,9.04,Novoseek_inferred
+HOXA10,Homeobox A10,Protein Coding,9.04,Diseases_inferred
+HOXA10,Homeobox A10,Protein Coding,9.04,Novoseek_inferred
+MIR155,MicroRNA 155,RNA Gene,9.01,Diseases_inferred
+MIR9-1,MicroRNA 9-1,RNA Gene,8.97,Diseases_inferred
+CCL3,C-C Motif Chemokine Ligand 3,Protein Coding,8.92,Diseases_inferred
+CCL3,C-C Motif Chemokine Ligand 3,Protein Coding,8.92,Novoseek_inferred
+KLRK1,Killer Cell Lectin Like Receptor K1,Protein Coding,8.88,Diseases_inferred
+KLRK1,Killer Cell Lectin Like Receptor K1,Protein Coding,8.88,Novoseek_inferred
+IL11,Interleukin 11,Protein Coding,8.86,Diseases_inferred
+IL11,Interleukin 11,Protein Coding,8.86,Novoseek_inferred
+FES,"FES Proto-Oncogene, Tyrosine Kinase",Protein Coding,8.85,Diseases_inferred
+FES,"FES Proto-Oncogene, Tyrosine Kinase",Protein Coding,8.85,Novoseek_inferred
+CEBPB,CCAAT Enhancer Binding Protein Beta,Protein Coding,8.84,Diseases_inferred
+CEBPB,CCAAT Enhancer Binding Protein Beta,Protein Coding,8.84,Novoseek_inferred
+MNDA,Myeloid Cell Nuclear Differentiation Antigen,Protein Coding,8.74,Diseases_inferred
+MNDA,Myeloid Cell Nuclear Differentiation Antigen,Protein Coding,8.74,Novoseek_inferred
+TNFSF10,TNF Superfamily Member 10,Protein Coding,8.73,Diseases_inferred
+TNFSF10,TNF Superfamily Member 10,Protein Coding,8.73,Novoseek_inferred
+MIR126,MicroRNA 126,RNA Gene,8.73,Diseases_inferred
+MIR125A,MicroRNA 125a,RNA Gene,8.71,Diseases_inferred
+MAPK14,Mitogen-Activated Protein Kinase 14,Protein Coding,8.7,Diseases_inferred
+MAPK14,Mitogen-Activated Protein Kinase 14,Protein Coding,8.7,Novoseek_inferred
+PTPRC,Protein Tyrosine Phosphatase Receptor Type C,Protein Coding,8.7,Diseases_inferred
+PTPRC,Protein Tyrosine Phosphatase Receptor Type C,Protein Coding,8.7,Novoseek_inferred
+RAF1,"Raf-1 Proto-Oncogene, Serine/Threonine Kinase",Protein Coding,8.61,Diseases_inferred
+RAF1,"Raf-1 Proto-Oncogene, Serine/Threonine Kinase",Protein Coding,8.61,Novoseek_inferred
+EVPL,Envoplakin,Protein Coding,8.59,Diseases_inferred
+TAL1,"TAL BHLH Transcription Factor 1, Erythroid Differentiation Factor",Protein Coding,8.58,Diseases_inferred
+TAL1,"TAL BHLH Transcription Factor 1, Erythroid Differentiation Factor",Protein Coding,8.58,Novoseek_inferred
+ELANE,"Elastase, Neutrophil Expressed",Protein Coding,8.46,Diseases_inferred
+ELANE,"Elastase, Neutrophil Expressed",Protein Coding,8.46,Novoseek_inferred
+APAF1,Apoptotic Peptidase Activating Factor 1,Protein Coding,8.42,Diseases_inferred
+APAF1,Apoptotic Peptidase Activating Factor 1,Protein Coding,8.42,Novoseek_inferred
+EPOR,Erythropoietin Receptor,Protein Coding,8.39,Diseases_inferred
+EPOR,Erythropoietin Receptor,Protein Coding,8.39,Novoseek_inferred
+MIR18A,MicroRNA 18a,RNA Gene,8.38,Diseases_inferred
+NTRK1,Neurotrophic Receptor Tyrosine Kinase 1,Protein Coding,8.38,Diseases_inferred
+NTRK1,Neurotrophic Receptor Tyrosine Kinase 1,Protein Coding,8.38,Novoseek_inferred
+MIR142,MicroRNA 142,RNA Gene,8.37,Diseases_inferred
+MIR92A1,MicroRNA 92a-1,RNA Gene,8.36,Diseases_inferred
+MIR196A1,MicroRNA 196a-1,RNA Gene,8.35,Diseases_inferred
+CTLA4,Cytotoxic T-Lymphocyte Associated Protein 4,Protein Coding,8.32,Diseases_inferred
+CTLA4,Cytotoxic T-Lymphocyte Associated Protein 4,Protein Coding,8.32,Novoseek_inferred
+CBFB,Core-Binding Factor Subunit Beta,Protein Coding,8.28,Diseases_inferred
+CBFB,Core-Binding Factor Subunit Beta,Protein Coding,8.28,Novoseek_inferred
+MIR19B1,MicroRNA 19b-1,RNA Gene,8.24,Diseases_inferred
+GZMB,Granzyme B,Protein Coding,8.23,Diseases_inferred
+GZMB,Granzyme B,Protein Coding,8.23,Novoseek_inferred
+HSPA8,Heat Shock Protein Family A (Hsp70) Member 8,Protein Coding,8.21,Diseases_inferred
+HSPA8,Heat Shock Protein Family A (Hsp70) Member 8,Protein Coding,8.21,Novoseek_inferred
+MIR19A,MicroRNA 19a,RNA Gene,8.2,Diseases_inferred
+MIR199A1,MicroRNA 199a-1,RNA Gene,8.18,Diseases_inferred
+NME1,NME/NM23 Nucleoside Diphosphate Kinase 1,Protein Coding,8.12,Diseases_inferred
+NME1,NME/NM23 Nucleoside Diphosphate Kinase 1,Protein Coding,8.12,Novoseek_inferred
+MIR193A,MicroRNA 193a,RNA Gene,8.09,Diseases_inferred
+G6PD,Glucose-6-Phosphate Dehydrogenase,Protein Coding,8.08,Diseases_inferred
+G6PD,Glucose-6-Phosphate Dehydrogenase,Protein Coding,8.08,Novoseek_inferred
+ASS1,Argininosuccinate Synthase 1,Protein Coding,8.05,Diseases_inferred
+ASS1,Argininosuccinate Synthase 1,Protein Coding,8.05,Novoseek_inferred
+TNFRSF10B,TNF Receptor Superfamily Member 10b,Protein Coding,8.03,Diseases_inferred
+TNFRSF10B,TNF Receptor Superfamily Member 10b,Protein Coding,8.03,Novoseek_inferred
+H4C16,H4 Histone 16,Protein Coding,8.01,Diseases_inferred
+H4C16,H4 Histone 16,Protein Coding,8.01,Novoseek_inferred
+SOCS2,Suppressor Of Cytokine Signaling 2,Protein Coding,7.95,Diseases_inferred
+SOCS2,Suppressor Of Cytokine Signaling 2,Protein Coding,7.95,Novoseek_inferred
+EIF4E,Eukaryotic Translation Initiation Factor 4E,Protein Coding,7.91,Diseases_inferred
+EIF4E,Eukaryotic Translation Initiation Factor 4E,Protein Coding,7.91,Novoseek_inferred
+PLK1,Polo Like Kinase 1,Protein Coding,7.88,Diseases_inferred
+PLK1,Polo Like Kinase 1,Protein Coding,7.88,Novoseek_inferred
+ITGB3,Integrin Subunit Beta 3,Protein Coding,7.88,Diseases_inferred
+ITGB3,Integrin Subunit Beta 3,Protein Coding,7.88,Novoseek_inferred
+PTK2,Protein Tyrosine Kinase 2,Protein Coding,7.86,Diseases_inferred
+PTK2,Protein Tyrosine Kinase 2,Protein Coding,7.86,Novoseek_inferred
+ADA,Adenosine Deaminase,Protein Coding,7.85,Diseases_inferred
+ADA,Adenosine Deaminase,Protein Coding,7.85,Novoseek_inferred
+MIRLET7A1,MicroRNA Let-7a-1,RNA Gene,7.8,Diseases_inferred
+SHC1,SHC Adaptor Protein 1,Protein Coding,7.77,Diseases_inferred
+SHC1,SHC Adaptor Protein 1,Protein Coding,7.77,Novoseek_inferred
+MIR30A,MicroRNA 30a,RNA Gene,7.73,Diseases_inferred
+AKT1,AKT Serine/Threonine Kinase 1,Protein Coding,7.73,Diseases_inferred
+CCNA2,Cyclin A2,Protein Coding,7.66,Diseases_inferred
+CCNA2,Cyclin A2,Protein Coding,7.66,Novoseek_inferred
+TP53,Tumor Protein P53,Protein Coding,7.66,Diseases_inferred
+MIR486-1,MicroRNA 486-1,RNA Gene,7.61,Diseases_inferred
+INPP5D,Inositol Polyphosphate-5-Phosphatase D,Protein Coding,7.57,Diseases_inferred
+INPP5D,Inositol Polyphosphate-5-Phosphatase D,Protein Coding,7.57,Novoseek_inferred
+EGFR,Epidermal Growth Factor Receptor,Protein Coding,7.56,Diseases_inferred
+NFKBIA,NFKB Inhibitor Alpha,Protein Coding,7.55,Diseases_inferred
+NFKBIA,NFKB Inhibitor Alpha,Protein Coding,7.55,Novoseek_inferred
+MIR141,MicroRNA 141,RNA Gene,7.54,Diseases_inferred
+CREB1,CAMP Responsive Element Binding Protein 1,Protein Coding,7.51,Diseases_inferred
+CREB1,CAMP Responsive Element Binding Protein 1,Protein Coding,7.51,Novoseek_inferred
+PML,PML Nuclear Body Scaffold,Protein Coding,7.45,Diseases_inferred
+PML,PML Nuclear Body Scaffold,Protein Coding,7.45,Novoseek_inferred
+TNFRSF10A,TNF Receptor Superfamily Member 10a,Protein Coding,7.43,Diseases_inferred
+TNFRSF10A,TNF Receptor Superfamily Member 10a,Protein Coding,7.43,Novoseek_inferred
+SOCS3,Suppressor Of Cytokine Signaling 3,Protein Coding,7.4,Diseases_inferred
+SOCS3,Suppressor Of Cytokine Signaling 3,Protein Coding,7.4,Novoseek_inferred
+CDC25A,Cell Division Cycle 25A,Protein Coding,7.39,Diseases_inferred
+CDC25A,Cell Division Cycle 25A,Protein Coding,7.39,Novoseek_inferred
+SELP,Selectin P,Protein Coding,7.35,Diseases_inferred
+SELP,Selectin P,Protein Coding,7.35,Novoseek_inferred
+IRF4,Interferon Regulatory Factor 4,Protein Coding,7.31,Diseases_inferred
+IRF4,Interferon Regulatory Factor 4,Protein Coding,7.31,Novoseek_inferred
+MIR1245B,MicroRNA 1245b,RNA Gene,7.3,Diseases_inferred
+LEF1,Lymphoid Enhancer Binding Factor 1,Protein Coding,7.29,Diseases_inferred
+LEF1,Lymphoid Enhancer Binding Factor 1,Protein Coding,7.29,Novoseek_inferred
+CREBBP,CREB Binding Protein,Protein Coding,7.29,Diseases_inferred
+CREBBP,CREB Binding Protein,Protein Coding,7.29,Novoseek_inferred
+KDM4C,Lysine Demethylase 4C,Protein Coding,7.29,Diseases_inferred
+ERBB2,Erb-B2 Receptor Tyrosine Kinase 2,Protein Coding,7.29,Diseases_inferred
+MIR140,MicroRNA 140,RNA Gene,7.26,Diseases_inferred
+BIRC3,Baculoviral IAP Repeat Containing 3,Protein Coding,7.25,Diseases_inferred
+BIRC3,Baculoviral IAP Repeat Containing 3,Protein Coding,7.25,Novoseek_inferred
+MIR202,MicroRNA 202,RNA Gene,7.25,Diseases_inferred
+MIR342,MicroRNA 342,RNA Gene,7.22,Diseases_inferred
+MIR151A,MicroRNA 151a,RNA Gene,7.2,Diseases_inferred
+CD38,CD38 Molecule,Protein Coding,7.2,Diseases_inferred
+PTPN6,Protein Tyrosine Phosphatase Non-Receptor Type 6,Protein Coding,7.17,Diseases_inferred
+PTPN6,Protein Tyrosine Phosphatase Non-Receptor Type 6,Protein Coding,7.17,Novoseek_inferred
+CCR7,C-C Motif Chemokine Receptor 7,Protein Coding,7.14,Diseases_inferred
+CCR7,C-C Motif Chemokine Receptor 7,Protein Coding,7.14,Novoseek_inferred
+PRKCD,Protein Kinase C Delta,Protein Coding,7.14,Diseases_inferred
+PRKCD,Protein Kinase C Delta,Protein Coding,7.14,Novoseek_inferred
+ENG,Endoglin,Protein Coding,7.12,Diseases_inferred
+ENG,Endoglin,Protein Coding,7.12,Novoseek_inferred
+ALK,ALK Receptor Tyrosine Kinase,Protein Coding,7.1,Diseases_inferred
+STAT3,Signal Transducer And Activator Of Transcription 3,Protein Coding,7.09,Diseases_inferred
+PTPN1,Protein Tyrosine Phosphatase Non-Receptor Type 1,Protein Coding,7.07,Diseases_inferred
+PTPN1,Protein Tyrosine Phosphatase Non-Receptor Type 1,Protein Coding,7.07,Novoseek_inferred
+SIRPA,Signal Regulatory Protein Alpha,Protein Coding,7.05,Diseases_inferred
+SIRPA,Signal Regulatory Protein Alpha,Protein Coding,7.05,Novoseek_inferred
+NPM1,Nucleophosmin 1,Protein Coding,7.02,Diseases_inferred
+CTNNB1,Catenin Beta 1,Protein Coding,7.01,Diseases_inferred
+ICOSLG,Inducible T Cell Costimulator Ligand,Protein Coding,6.99,Diseases_inferred
+MIR127,MicroRNA 127,RNA Gene,6.98,Diseases_inferred
+ASXL1,ASXL Transcriptional Regulator 1,Protein Coding,6.98,Diseases_inferred
+CCR6,C-C Motif Chemokine Receptor 6,Protein Coding,6.97,Diseases_inferred
+MIR224,MicroRNA 224,RNA Gene,6.96,Diseases_inferred
+CD19,CD19 Molecule,Protein Coding,6.94,Diseases_inferred
+CD8A,CD8 Subunit Alpha,Protein Coding,6.94,Diseases_inferred
+LUC7L2,"LUC7 Like 2, Pre-MRNA Splicing Factor",Protein Coding,6.94,Diseases_inferred
+MIR708,MicroRNA 708,RNA Gene,6.93,Diseases_inferred
+LCK,"LCK Proto-Oncogene, Src Family Tyrosine Kinase",Protein Coding,6.92,Diseases_inferred
+MIR574,MicroRNA 574,RNA Gene,6.91,Diseases_inferred
+VEGFA,Vascular Endothelial Growth Factor A,Protein Coding,6.9,Diseases_inferred
+CCND1,Cyclin D1,Protein Coding,6.89,Diseases_inferred
+PTEN,Phosphatase And Tensin Homolog,Protein Coding,6.87,Diseases_inferred
+TET2,Tet Methylcytosine Dioxygenase 2,Protein Coding,6.84,Diseases_inferred
+ITGB1,Integrin Subunit Beta 1,Protein Coding,6.83,Diseases_inferred
+ITGB1,Integrin Subunit Beta 1,Protein Coding,6.83,Novoseek_inferred
+IRF2,Interferon Regulatory Factor 2,Protein Coding,6.83,Diseases_inferred
+IRF2,Interferon Regulatory Factor 2,Protein Coding,6.83,Novoseek_inferred
+PRODH,Proline Dehydrogenase 1,Protein Coding,6.82,Diseases_inferred
+BCL2L11,BCL2 Like 11,Protein Coding,6.79,Diseases_inferred
+ABCG2,ATP Binding Cassette Subfamily G Member 2 (Junior Blood Group),Protein Coding,6.79,Diseases_inferred
+ABL2,"ABL Proto-Oncogene 2, Non-Receptor Tyrosine Kinase",Protein Coding,6.79,Diseases_inferred
+MLLT3,MLLT3 Super Elongation Complex Subunit,Protein Coding,6.77,Diseases_inferred
+CDKN1C,Cyclin Dependent Kinase Inhibitor 1C,Protein Coding,6.77,Diseases_inferred
+CDKN1C,Cyclin Dependent Kinase Inhibitor 1C,Protein Coding,6.77,Novoseek_inferred
+CD4,CD4 Molecule,Protein Coding,6.76,Diseases_inferred
+NOTCH1,Notch Receptor 1,Protein Coding,6.73,Diseases_inferred
+IL2,Interleukin 2,Protein Coding,6.72,Diseases_inferred
+CALR,Calreticulin,Protein Coding,6.72,Diseases_inferred
+IL6,Interleukin 6,Protein Coding,6.69,Diseases_inferred
+ACTB,Actin Beta,Protein Coding,6.65,Diseases_inferred
+CEBPA,CCAAT Enhancer Binding Protein Alpha,Protein Coding,6.65,Diseases_inferred
+MTOR,Mechanistic Target Of Rapamycin Kinase,Protein Coding,6.63,Diseases_inferred
+GOLGA4,Golgin A4,Protein Coding,6.61,Diseases_inferred
+HLA-A,"Major Histocompatibility Complex, Class I, A",Protein Coding,6.59,Diseases_inferred
+JAK1,Janus Kinase 1,Protein Coding,6.59,Diseases_inferred
+DNMT3A,DNA Methyltransferase 3 Alpha,Protein Coding,6.59,Diseases_inferred
